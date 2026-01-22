@@ -626,7 +626,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                     return array.join('');
                 }
-                result = shuffleString("abcdefghi"); // alfabetik sıraya göre git kafana göre harf verme
+                result = shuffleString("abcdefghijklmnopqr"); // alfabetik sıraya göre git kafana göre harf verme
 
                 if (result != '') { //sunucudan veri dönmezse
                     firmalar_element = document.querySelectorAll('.row.diamond:not(.clover) .col');
@@ -640,7 +640,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         var firmalar_temp = [];
                         var i = 0;
                         firmalar_element.forEach(function(F) {
-                            if (['supertotobet','fixbet','solobet','zbahis','matadorbet','venombet','marsbahis','palazzobet','dedebet','damabet','onwin','grandpashabet','bahibom','anubis','mersobahis','amgbahis','primebahis'].includes(F.querySelector('a[site]').getAttribute('site'))) {
+                            if (['grandpashabet','onwin','dedebet','palazzobet','venombet','marsbahis','damabet'].includes(F.querySelector('a[site]').getAttribute('site'))) {
                                 en_uste_ekle += F.outerHTML;
                             } else {
                                 firmalar_temp[indis[i++]] = F.outerHTML;
